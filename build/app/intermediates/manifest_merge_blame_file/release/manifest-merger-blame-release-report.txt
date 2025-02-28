@@ -1,0 +1,228 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.superapp"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10    <!-- Required permissions for VPN and network switching -->
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:4:5-67
+11-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:5:5-79
+12-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:5:22-76
+13    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+13-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:6:5-79
+13-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:6:22-76
+14    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+14-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:7:5-77
+14-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:7:22-74
+15    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+15-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:8:5-76
+15-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:8:22-73
+16    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+16-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:9:5-76
+16-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:9:22-73
+17    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+17-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:10:5-87
+17-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:10:22-84
+18    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE" />
+18-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:11:5-94
+18-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:11:22-91
+19
+20    <!--
+21     Required to query activities that can process text, see:
+22     https://developer.android.com/training/package-visibility and
+23     https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+24     In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+25    -->
+26    <queries>
+26-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:64:5-69:15
+27        <intent>
+27-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:65:9-68:18
+28            <action android:name="android.intent.action.PROCESS_TEXT" />
+28-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:66:13-72
+28-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:66:21-70
+29
+30            <data android:mimeType="text/plain" />
+30-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:67:13-50
+30-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:67:19-48
+31        </intent>
+32    </queries>
+33
+34    <permission
+34-->[androidx.core:core:1.13.1] /Users/SGUTIERREG01/.gradle/caches/transforms-3/28ee8a5ebc96d117de5598ee6fce01ba/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+35        android:name="com.example.superapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+35-->[androidx.core:core:1.13.1] /Users/SGUTIERREG01/.gradle/caches/transforms-3/28ee8a5ebc96d117de5598ee6fce01ba/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+36        android:protectionLevel="signature" />
+36-->[androidx.core:core:1.13.1] /Users/SGUTIERREG01/.gradle/caches/transforms-3/28ee8a5ebc96d117de5598ee6fce01ba/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+37
+38    <uses-permission android:name="com.example.superapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+38-->[androidx.core:core:1.13.1] /Users/SGUTIERREG01/.gradle/caches/transforms-3/28ee8a5ebc96d117de5598ee6fce01ba/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+38-->[androidx.core:core:1.13.1] /Users/SGUTIERREG01/.gradle/caches/transforms-3/28ee8a5ebc96d117de5598ee6fce01ba/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+39
+40    <application
+41        android:name="android.app.Application"
+41-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:15:9-42
+42        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+42-->[androidx.core:core:1.13.1] /Users/SGUTIERREG01/.gradle/caches/transforms-3/28ee8a5ebc96d117de5598ee6fce01ba/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+43        android:enableOnBackInvokedCallback="true"
+43-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:17:9-51
+44        android:extractNativeLibs="true"
+45        android:icon="@mipmap/ic_launcher"
+45-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:16:9-43
+46        android:label="superapp" >
+46-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:14:9-33
+47
+48        <!-- Add the VPN Service -->
+49        <service
+49-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:20:9-28:19
+50            android:name="com.example.superapp.ProxyService"
+50-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:21:13-41
+51            android:exported="false"
+51-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:24:13-37
+52            android:foregroundServiceType="connectedDevice"
+52-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:23:13-60
+53            android:permission="android.permission.BIND_VPN_SERVICE" >
+53-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:22:13-69
+54            <intent-filter>
+54-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:25:13-27:29
+55                <action android:name="android.service.vpn.VpnService" />
+55-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:26:17-73
+55-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:26:25-70
+56            </intent-filter>
+57        </service>
+58
+59        <activity
+59-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:30:9-51:20
+60            android:name="com.example.superapp.MainActivity"
+60-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:31:13-41
+61            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+61-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:36:13-163
+62            android:exported="true"
+62-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:32:13-36
+63            android:hardwareAccelerated="true"
+63-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:37:13-47
+64            android:launchMode="singleTop"
+64-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:33:13-43
+65            android:taskAffinity=""
+65-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:34:13-36
+66            android:theme="@style/LaunchTheme"
+66-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:35:13-47
+67            android:windowSoftInputMode="adjustResize" >
+67-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:38:13-55
+68
+69            <!--
+70             Specifies an Android theme to apply to this Activity as soon as
+71             the Android process has started. This theme is visible to the user
+72             while the Flutter UI initializes. After that, this theme continues
+73             to determine the Window background behind the Flutter UI.
+74            -->
+75            <meta-data
+75-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:43:13-46:19
+76                android:name="io.flutter.embedding.android.NormalTheme"
+76-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:44:17-72
+77                android:resource="@style/NormalTheme" />
+77-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:45:17-54
+78
+79            <intent-filter>
+79-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:47:13-50:29
+80                <action android:name="android.intent.action.MAIN" />
+80-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:48:17-68
+80-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:48:25-66
+81
+82                <category android:name="android.intent.category.LAUNCHER" />
+82-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:49:17-76
+82-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:49:27-74
+83            </intent-filter>
+84        </activity>
+85
+86        <!--
+87         Don't delete the meta-data below.
+88         This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+89        -->
+90        <meta-data
+90-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:55:9-57:33
+91            android:name="flutterEmbedding"
+91-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:56:13-44
+92            android:value="2" />
+92-->/Users/SGUTIERREG01/Desktop/superapp/android/app/src/main/AndroidManifest.xml:57:13-30
+93
+94        <uses-library
+94-->[androidx.window:window:1.2.0] /Users/SGUTIERREG01/.gradle/caches/transforms-3/a017c0c1c150e766625df730ca1d1522/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
+95            android:name="androidx.window.extensions"
+95-->[androidx.window:window:1.2.0] /Users/SGUTIERREG01/.gradle/caches/transforms-3/a017c0c1c150e766625df730ca1d1522/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
+96            android:required="false" />
+96-->[androidx.window:window:1.2.0] /Users/SGUTIERREG01/.gradle/caches/transforms-3/a017c0c1c150e766625df730ca1d1522/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
+97        <uses-library
+97-->[androidx.window:window:1.2.0] /Users/SGUTIERREG01/.gradle/caches/transforms-3/a017c0c1c150e766625df730ca1d1522/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
+98            android:name="androidx.window.sidecar"
+98-->[androidx.window:window:1.2.0] /Users/SGUTIERREG01/.gradle/caches/transforms-3/a017c0c1c150e766625df730ca1d1522/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
+99            android:required="false" />
+99-->[androidx.window:window:1.2.0] /Users/SGUTIERREG01/.gradle/caches/transforms-3/a017c0c1c150e766625df730ca1d1522/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
+100
+101        <provider
+101-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/SGUTIERREG01/.gradle/caches/transforms-3/6f1de229824e3b626519c3b4ed1eee9b/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+102            android:name="androidx.startup.InitializationProvider"
+102-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/SGUTIERREG01/.gradle/caches/transforms-3/6f1de229824e3b626519c3b4ed1eee9b/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:25:13-67
+103            android:authorities="com.example.superapp.androidx-startup"
+103-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/SGUTIERREG01/.gradle/caches/transforms-3/6f1de229824e3b626519c3b4ed1eee9b/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:26:13-68
+104            android:exported="false" >
+104-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/SGUTIERREG01/.gradle/caches/transforms-3/6f1de229824e3b626519c3b4ed1eee9b/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:27:13-37
+105            <meta-data
+105-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/SGUTIERREG01/.gradle/caches/transforms-3/6f1de229824e3b626519c3b4ed1eee9b/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+106                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+106-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/SGUTIERREG01/.gradle/caches/transforms-3/6f1de229824e3b626519c3b4ed1eee9b/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+107                android:value="androidx.startup" />
+107-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/SGUTIERREG01/.gradle/caches/transforms-3/6f1de229824e3b626519c3b4ed1eee9b/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+108            <meta-data
+108-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/SGUTIERREG01/.gradle/caches/transforms-3/497b559c30d96929b625a427f3dee739/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+109                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+109-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/SGUTIERREG01/.gradle/caches/transforms-3/497b559c30d96929b625a427f3dee739/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+110                android:value="androidx.startup" />
+110-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/SGUTIERREG01/.gradle/caches/transforms-3/497b559c30d96929b625a427f3dee739/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+111        </provider>
+112
+113        <receiver
+113-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/SGUTIERREG01/.gradle/caches/transforms-3/497b559c30d96929b625a427f3dee739/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+114            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+114-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/SGUTIERREG01/.gradle/caches/transforms-3/497b559c30d96929b625a427f3dee739/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+115            android:directBootAware="false"
+115-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/SGUTIERREG01/.gradle/caches/transforms-3/497b559c30d96929b625a427f3dee739/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+116            android:enabled="true"
+116-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/SGUTIERREG01/.gradle/caches/transforms-3/497b559c30d96929b625a427f3dee739/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+117            android:exported="true"
+117-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/SGUTIERREG01/.gradle/caches/transforms-3/497b559c30d96929b625a427f3dee739/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+118            android:permission="android.permission.DUMP" >
+118-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/SGUTIERREG01/.gradle/caches/transforms-3/497b559c30d96929b625a427f3dee739/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+119            <intent-filter>
+119-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/SGUTIERREG01/.gradle/caches/transforms-3/497b559c30d96929b625a427f3dee739/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+120                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+120-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/SGUTIERREG01/.gradle/caches/transforms-3/497b559c30d96929b625a427f3dee739/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+120-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/SGUTIERREG01/.gradle/caches/transforms-3/497b559c30d96929b625a427f3dee739/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+121            </intent-filter>
+122            <intent-filter>
+122-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/SGUTIERREG01/.gradle/caches/transforms-3/497b559c30d96929b625a427f3dee739/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+123                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+123-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/SGUTIERREG01/.gradle/caches/transforms-3/497b559c30d96929b625a427f3dee739/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+123-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/SGUTIERREG01/.gradle/caches/transforms-3/497b559c30d96929b625a427f3dee739/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+124            </intent-filter>
+125            <intent-filter>
+125-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/SGUTIERREG01/.gradle/caches/transforms-3/497b559c30d96929b625a427f3dee739/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+126                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+126-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/SGUTIERREG01/.gradle/caches/transforms-3/497b559c30d96929b625a427f3dee739/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+126-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/SGUTIERREG01/.gradle/caches/transforms-3/497b559c30d96929b625a427f3dee739/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+127            </intent-filter>
+128            <intent-filter>
+128-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/SGUTIERREG01/.gradle/caches/transforms-3/497b559c30d96929b625a427f3dee739/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+129                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+129-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/SGUTIERREG01/.gradle/caches/transforms-3/497b559c30d96929b625a427f3dee739/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+129-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/SGUTIERREG01/.gradle/caches/transforms-3/497b559c30d96929b625a427f3dee739/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+130            </intent-filter>
+131        </receiver>
+132    </application>
+133
+134</manifest>

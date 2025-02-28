@@ -1,0 +1,36 @@
+<variant
+    name="release"
+    package="com.example.superapp"
+    minSdkVersion="21"
+    targetSdkVersion="34"
+    shrinking="true"
+    mergedManifest="/Users/SGUTIERREG01/Desktop/superapp/build/app/intermediates/merged_manifest/release/AndroidManifest.xml"
+    proguardFiles="/Users/SGUTIERREG01/Desktop/superapp/build/app/intermediates/default_proguard_files/global/proguard-android.txt-8.1.0:/Users/SGUTIERREG01/Development/flutter/packages/flutter_tools/gradle/flutter_proguard_rules.pro:proguard-rules.pro"
+    partialResultsDir="/Users/SGUTIERREG01/Desktop/superapp/build/app/intermediates/lint_vital_partial_results/release/out"
+    desugaredMethodsFiles="/Users/SGUTIERREG01/.gradle/caches/transforms-3/960a67cab1440d57165116e5d113ee39/transformed/D8BackportedDesugaredMethods.txt">
+  <buildFeatures
+      namespacing="REQUIRED"/>
+  <sourceProviders>
+    <sourceProvider
+        manifests="src/main/AndroidManifest.xml"
+        javaDirectories="src/main/java:src/release/java:src/main/kotlin:src/release/kotlin"
+        resDirectories="src/main/res:src/release/res"
+        assetsDirectories="src/main/assets:src/release/assets"/>
+  </sourceProviders>
+  <testSourceProviders>
+  </testSourceProviders>
+  <testFixturesSourceProviders>
+  </testFixturesSourceProviders>
+  <manifestPlaceholders>
+    <placeholder
+        name="applicationName"
+        value="android.app.Application" />
+  </manifestPlaceholders>
+  <mainArtifact
+      classOutputs="/Users/SGUTIERREG01/Desktop/superapp/build/app/intermediates/javac/release/classes:/Users/SGUTIERREG01/Desktop/superapp/build/app/tmp/kotlin-classes/release:/Users/SGUTIERREG01/Desktop/superapp/build/app/kotlinToolingMetadata:/Users/SGUTIERREG01/Desktop/superapp/build/app/intermediates/compile_and_runtime_not_namespaced_r_class_jar/release/R.jar"
+      applicationId="com.example.superapp"
+      generatedSourceFolders="/Users/SGUTIERREG01/Desktop/superapp/build/app/generated/ap_generated_sources/release/out"
+      generatedResourceFolders="/Users/SGUTIERREG01/Desktop/superapp/build/app/generated/res/resValues/release"
+      desugaredMethodsFiles="/Users/SGUTIERREG01/.gradle/caches/transforms-3/960a67cab1440d57165116e5d113ee39/transformed/D8BackportedDesugaredMethods.txt">
+  </mainArtifact>
+</variant>
